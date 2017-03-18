@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.apps.karama.mybornapp.konstraksi"
+    android:gravity="top"
+    >
+
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:background="@drawable/baby"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/txtjam"
+        android:layout_alignRight="@+id/btnstop"
+        android:layout_alignEnd="@+id/btnstop" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:id="@+id/btnstart"
+        android:layout_marginBottom="37dp"
+        android:layout_above="@+id/button9"
+        android:layout_alignLeft="@+id/button9"
+        android:layout_alignStart="@+id/button9" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="STOP"
+        android:id="@+id/btnstop"
+        android:layout_alignTop="@+id/btnstart"
+        android:layout_alignRight="@+id/button9"
+        android:layout_alignEnd="@+id/button9" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Past Sessions"
+        android:id="@+id/button9"
+        android:layout_marginBottom="91dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00"
+        android:id="@+id/txtjam"
+        android:textSize="60dp"
+        android:layout_above="@+id/btnstart"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00"
+        android:id="@+id/txtmenit"
+        android:textSize="60dp"
+        android:layout_above="@+id/btnstart"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00"
+        android:id="@+id/txtdetik"
+        android:textSize="60dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=":"
+        android:id="@+id/textView3"
+        android:textSize="60dp"
+        android:layout_above="@+id/btnstart"
+        android:layout_toLeftOf="@+id/txtmenit"
+        android:layout_toStartOf="@+id/txtmenit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=":"
+        android:id="@+id/textView4"
+        android:textSize="60dp"
+        android:layout_above="@+id/btnstop"
+        android:layout_toRightOf="@+id/txtmenit"
+        android:layout_toEndOf="@+id/txtmenit" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/relativeLayout5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="KONSTRAKSI"
+            android:id="@+id/textView11"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date now"
+        android:id="@+id/textView2"
+        android:textSize="10dp"
+        android:textColor="#f41b5c"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

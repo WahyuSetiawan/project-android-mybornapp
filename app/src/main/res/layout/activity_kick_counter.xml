@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.apps.karama.mybornapp.kick_counter">
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/kick2"
+        android:id="@+id/imageButton6"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtscreen"
+        android:textSize="50dp"
+        android:textColor="#f04b4b"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:id="@+id/btnstart"
+        android:layout_below="@+id/txtmenit"
+        android:layout_toLeftOf="@+id/txttanggal"
+        android:layout_toStartOf="@+id/txttanggal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KICK COUNTER"
+            android:id="@+id/textView10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#fffefe"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date now"
+        android:id="@+id/txttanggal"
+        android:textSize="10dp"
+        android:textColor="#f41b5c"
+        android:layout_above="@+id/txtmenit"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/txtdetik"
+        android:textSize="20dp"
+        android:layout_above="@+id/btnstart"
+        android:layout_toRightOf="@+id/txtscreen"
+        android:layout_toEndOf="@+id/txtscreen" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/txtmenit"
+        android:textSize="20dp"
+        android:layout_marginTop="77dp"
+        android:layout_alignTop="@+id/txtscreen"
+        android:layout_toLeftOf="@+id/txtscreen"
+        android:layout_toStartOf="@+id/txtscreen" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:id="@+id/textView9"
+        android:textSize="20dp"
+        android:layout_above="@+id/btnstart"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop"
+        android:id="@+id/btnstop"
+        android:layout_above="@+id/btcount"
+        android:layout_alignRight="@+id/btcount"
+        android:layout_alignEnd="@+id/btcount" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="View Past Sessions"
+        android:id="@+id/btshow"
+        android:onClick="addKick"
+        android:layout_below="@+id/btcount"
+        android:layout_alignLeft="@+id/btcount"
+        android:layout_alignStart="@+id/btcount" />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="count"
+        android:id="@+id/btcount"
+        android:layout_below="@+id/btnstart"
+        android:layout_alignLeft="@+id/btnstart"
+        android:layout_alignStart="@+id/btnstart" />
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="View"
+        android:id="@+id/btListvIEW"
+        android:onClick="addShow"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
